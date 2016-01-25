@@ -23,7 +23,7 @@ def header():
          font-size: 12px;
          font-weight: normal;
          color: black;
-         background: white;
+         background: #f0f3;
         }
         th,td {
          font-size: 10px;
@@ -62,12 +62,12 @@ def header():
         .frontend {background: #e8e8d0;}
         .s   {background: #e0e0e0;}
         .a0  {background: #FF99CC; font-weight: bold;}
-        .a1  {background: #CCFF99;}
-        .a2  {background: #CCFFFF;}
+        .a1  {background: #f0f3;}
+        .a2  {background: #f1f2;}
         .a3  {background: #CCCCFF;}
-        .a4  {background: #66CCCC;}
-        .a5  {background: #CCFF66;}
-        .a6  {background: #FFCC99;}
+        .a4  {background: #f0f3;}
+        .a5  {background: #f1f2;}
+        .a6  {background: #CCCCFF;}
         .maintain {background: #c07820;}
         .rls      {letter-spacing: 0.2em; margin-right: 1px;}
 
@@ -79,7 +79,7 @@ def header():
         a.lfsb:hover {color: #505050; text-decoration: none;}
 
         table.tbl { border-collapse: collapse; border-style: none;}
-        table.tbl td { text-align: right; border-width: 1px 1px 1px 1px; border-style: solid solid solid solid; padding: 2px 3px; border-color: gray; white-space: nowrap;}
+        table.tbl td { text-align: left; border-width: 1px 1px 1px 1px; border-style: solid solid solid solid; padding: 2px 3px; border-color: gray; white-space: nowrap;}
         table.tbl td.ac { text-align: center;}
         table.tbl th { border-width: 1px; border-style: solid solid solid solid; border-color: gray;}
         table.tbl th.pxname { background: #b00040; color: #ffff40; font-weight: bold; border-style: solid solid none solid; padding: 2px 3px; white-space: nowrap;}
@@ -92,11 +92,11 @@ def header():
         u {text-decoration:none; border-bottom: 1px dotted black;}
         -->
         </style></head><body><h1>Git of Mr.WYF</h1><hr><h3>&gt; General git project information.</h3>
-        <table border=0>'''
+        <table class="tbl" width=100%>'''
     return headerHtml
 
 def footer():
-    footHtml = '''</table></body></html>'''
+    footHtml = '''</table><p width=80% align=center>Copyright (C) 2016 Wang Yaofu</p></body></html>'''
     return footHtml
 
 def indexMainRow():
